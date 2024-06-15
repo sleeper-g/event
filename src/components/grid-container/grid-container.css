@@ -1,0 +1,17 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    width: 800px;
+}
+.grid-item {
+    display: inline-block;
+    border: 1px solid black;
+    min-width: 50px;
+    min-height: 150px;
+}
+.mob {
+    background-image: url('../../img/goblin.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

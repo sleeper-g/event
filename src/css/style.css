@@ -1,0 +1,27 @@
+.game {
+  background-color: #717171;
+  color: red;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.mob {
+  background-image: url('../img/goblin.png') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.info-container {
+	background-color: #3f3f3f;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.hit-value {
+	display: inline;
+}
+.miss-value {
+	display: inline;
+}
