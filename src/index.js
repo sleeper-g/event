@@ -1,4 +1,4 @@
-import "./css/style.css"
-import "./js/app"
+import "./css/style.css";
+import "./js/app";
 
-console.log('Please wait a moment')
+console.log("Please wait a moment");

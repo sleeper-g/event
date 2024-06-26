@@ -1,5 +1,5 @@
-import { Game } from "./game"
+import { Game } from "./game";
 
-const game = new Game('.gameField');
+const game = new Game(".gameField");
 
 game.startGame();
