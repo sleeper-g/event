@@ -6,9 +6,15 @@ branches:
     - main
 cache: node_modules
 install:
-  - npm install
+  - yarn
 build: off
 build_script:
-  - yarn run build
+  - yarn build
 test_script:
-  - yarn run lint
+  - yarn lint && yarn test
+deploy_script:  # скрипт развёртывания
+  - git config --global credential.helper store
+  - git config --global user.name AppVeyor
+  - git config --global user.email ci@appveyor.com
+  - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
+  - npx gh-pages -d dist -u "appveyor-bot <ci@appveyor>"
