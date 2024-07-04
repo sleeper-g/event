@@ -10,6 +10,7 @@ export default [
       eslintPluginPrettierRecommended,
     },
   },
+
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
   eslintPluginPrettierRecommended,
@@ -28,5 +29,6 @@ export default [
       ...jest.configs["flat/recommended"].rules,
       "jest/prefer-expect-assertions": "off",
     },
+    env: { jest: true },
   },
 ];
