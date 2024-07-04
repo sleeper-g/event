@@ -3,7 +3,8 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/inty1188mcudw2lw?svg=true)](https://ci.appveyor.com/project/sleeper-g/event)
 
 # link 
-[page][https://sleeper-g.github.io/event/dist]
+[![page][https://sleeper-g.github.io/event/dist]]
+
 # event
 
 Правила сдачи задания:
