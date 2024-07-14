@@ -6,12 +6,16 @@ import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended"
 export default [
   {
     plugins: {
-      jest: jest,
+      jest,
       eslintPluginPrettierRecommended,
     },
   },
 
-  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
+  {
+    languageOptions: {
+      globals: { ...globals.browser, ...globals.node, ...globals.jest },
+    },
+  },
   pluginJs.configs.recommended,
   eslintPluginPrettierRecommended,
   {
@@ -29,6 +33,8 @@ export default [
       ...jest.configs["flat/recommended"].rules,
       "jest/prefer-expect-assertions": "off",
     },
-    env: { jest: true },
   },
+  //{
+  //  env: { "jest/globals": true },
+  //},
 ];

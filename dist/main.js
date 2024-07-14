@@ -1,6 +1,5 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./src/js/game.js
 class Game {
